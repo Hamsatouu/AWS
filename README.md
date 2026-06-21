@@ -139,6 +139,4 @@ Ces erreurs m’ont permis de mieux comprendre le fonctionnement réel d’AWS e
 - déployer l’architecture sur plusieurs Availability Zones
 - ajouter une validation Terraform dans un pipeline CI/CD
 
-## Auteur
-Dandaré Nayé  
-Étudiant en Master 1 en gestion de projet informatique, en montée en compétences sur le cloud et le DevOps à travers des projets pratiques sur AWS et Azure.
+
