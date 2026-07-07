@@ -1,3 +1,4 @@
+MONTEE EN COMPETENCES AWS
 # Projet Création VPC AWS avec Terraform
 
 ## Présentation
@@ -131,12 +132,30 @@ Ces erreurs m’ont permis de mieux comprendre le fonctionnement réel d’AWS e
 - pratique de l’Infrastructure as Code
 - dépannage d’erreurs de déploiement Terraform
 
-## Améliorations possibles
-- restreindre encore plus l’accès SSH à une IP précise
-- ajouter un schéma d’architecture
-- ajouter des captures d’écran AWS et Terraform
-- refactoriser le projet en modules Terraform réutilisables
-- déployer l’architecture sur plusieurs Availability Zones
-- ajouter une validation Terraform dans un pipeline CI/CD
+### Projet : Automatiser EC2 avec User Data
 
+TP réalisé sur AWS EC2 pour automatiser la configuration d’une instance au démarrage à l’aide de **User Data**.
+
+**Objectif :**
+lancer une instance EC2 Amazon Linux 2023 capable d’installer automatiquement Apache et PHP, puis de servir une page web de démonstration sans intervention manuelle.
+
+**Compétences travaillées :**
+- User Data / cloud-init
+- Installation automatisée de paquets
+- Configuration Linux
+- Security Groups
+- Déploiement automatisé
+- Vérification via logs système
+
+**Actions réalisées :**
+- Création d’une instance EC2 `t3.micro`
+- Ouverture des ports SSH et HTTP via Security Group
+- Exécution d’un script `User Data` au boot
+- Installation automatique de `httpd` et `php`
+- Démarrage et activation d’Apache
+- Génération d’une page web PHP dynamique
+- Contrôle de l’exécution via les logs `cloud-init`
+
+**Résultat :**
+une instance EC2 opérationnelle dès le premier démarrage, avec un serveur web Apache configuré automatiquement.
 
