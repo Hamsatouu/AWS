@@ -1,0 +1,18 @@
+<<'EOF'
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vulnerable-pod
+  labels:
+    app: vulnerable-app
+spec:
+  hostPID: true
+  containers:
+    - name: nginx
+      image: nginx:1.25
+      ports:
+        - containerPort: 80
+      securityContext:
+        privileged: true
+        runAsUser: 0
+EOF
